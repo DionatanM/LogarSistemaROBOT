@@ -1,1 +1,3 @@
 # LogarSistemaROBOT
+
+-> pip install python
