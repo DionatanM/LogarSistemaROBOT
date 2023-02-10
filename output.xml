@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20230210 08:58:09.008" rpa="false" schemaversion="3">
+<suite id="s1" name="TesteSplitterMK" source="C:\Users\dionatan.santos\Desktop\Meus diversos\PHA - Prime Hero Academy\Aulas\TesteSplitter\TesteSplitterMK.robot">
+<test id="s1-t1" name="Abrir o navegador" line="16">
+<kw name="Open">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL_PAGINA}</arg>
+<arg>${NAVEGADOR_CHROME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230210 08:58:09.249" level="INFO">Opening browser 'chrome' to base url ''https://mk3-8312.mksolutions.com.br/mk''.</msg>
+<msg timestamp="20230210 08:58:12.743" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="FAIL" starttime="20230210 08:58:09.249" endtime="20230210 08:58:12.743"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230210 08:58:12.743" endtime="20230210 08:58:12.744"/>
+</kw>
+<status status="FAIL" starttime="20230210 08:58:09.249" endtime="20230210 08:58:12.744"/>
+</kw>
+<kw name="Insert user">
+<status status="NOT RUN" starttime="20230210 08:58:12.745" endtime="20230210 08:58:12.746"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<errors>
+<msg timestamp="20230210 08:58:15.565" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>
