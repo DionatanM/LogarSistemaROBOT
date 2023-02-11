@@ -2,6 +2,13 @@
 
 -> pip install python
 
+# Extensões VSCODE
+
+-> RobotF Extension - KMK Labs
+
+-> Python - Microsoft
+
+-> Pylance
 
 ```mermaid
 flowchart TD;

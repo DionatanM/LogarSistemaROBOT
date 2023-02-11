@@ -1,16 +1,12 @@
-RobotF Extension - KMK Labs
-Python - Microsoft
-Pylance
-
 *** Settings ***
 Library           SeleniumLibrary
 
 
 *** Variables ***
 ${NAVEGADOR_CHROME}    chrome
-${URL_PAGINA}   'https://mk3-8312.mksolutions.com.br/mk'  
-${USER}    'dionatan'
-${PASSWORD}   'Dio@1234567' 
+${URL_PAGINA}   
+${USER}    
+${PASSWORD}
 
 *** Test Cases ***
 Abrir o navegador
@@ -30,7 +26,9 @@ Insert user
     Input Text           xpath=/html/body/div/div[2]/form/input[2]    text=${USER}
     Input Password       xpath=/html/body/div/div[2]/form/input[3]    password=${PASSWORD} 
     Click Button         xpath=/html/body/div/div[2]/form/button
-    Click Element        locator=//*[@id="1162115"] 
+    Select Frame         xpath=/html/frameset/frame
+    Select Frame         xpath=/html/body/iframe
+    Click Button         xpath=//*[@id="1162115"]
 
 Close Browser
     Sleep  5 seconds
